@@ -3,6 +3,7 @@ body {
 }
 
 /* 아바타 컴포넌트 */
+/* <figure> 요소 */
 .avatar-img {
   /* 영역이 잘 선택되었는지 확인하는 방법 - 배경 또는 박스 그림자 */
   background-color: #ffc;
@@ -39,11 +40,13 @@ body {
   }
 }
 
+/* <button> 요소 */
 .avatar-button {
   background-color: transparent;
   padding: 0;
   border: 0 none;
   position: relative;
+  vertical-align: top;
 
   --size: 64px;
 
@@ -75,5 +78,20 @@ body {
   }
   &[aria-label='offline']::after {
     background-color: #dbdbdb;
+  }
+}
+
+/* 아바타 레이아웃 */
+.avatar-list {
+  background-color: #ffc;
+  display: flow-root;
+  padding: 10px 30px;
+
+  width: 400px;
+  border: 2px solid red;
+
+  li {
+    float: left;
+    margin: 10px;
   }
 }
