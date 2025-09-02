@@ -1,0 +1,21 @@
+body {
+  margin: 20px;
+}
+
+/* 유틸리티 바 */
+.utility-bar {
+  text-transform: uppercase;
+  font-size: 0;
+  text-align: right;
+
+  li {
+    display: inline-block;
+  }
+
+  a,
+  [aria-hidden='true'] {
+    display: inherit;
+    padding: 8px;
+    font-size: 1rem;
+  }
+}
