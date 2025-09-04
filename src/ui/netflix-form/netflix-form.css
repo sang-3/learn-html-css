@@ -127,3 +127,67 @@ body {
     }
   }
 }
+
+/* 입력 서식 */
+.input {
+  --primary-color: var(--red-500);
+  --text-color: var(--gray-700);
+
+  color: var(--text-color);
+  border: 1px solid currentColor;
+  padding: 12px 20px;
+  position: relative;
+
+  &:focus-within {
+    background-color: #ffc;
+
+    label {
+      color: var(--primary-color);
+      font-size: 10px;
+      translate: 0 -120%;
+    }
+  }
+
+  label {
+    position: absolute;
+    inset-block-start: 50%;
+    inset-inline-start: 20px;
+    translate: 0 -50%;
+  }
+
+  input {
+    inline-size: 100%;
+    border: 0 none;
+    background: transparent;
+    outline: none; /* 디자인적인 대안이 있다면 사용해도 무방 */
+  }
+}
+/* .input {
+  background: #ffc;
+  position: relative;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 400px;
+
+  input {
+    border: none;
+    inline-size: 100%;
+    outline: none;
+  }
+
+  label {
+    position: absolute;
+  }
+} */
+
+.input-wrapper {
+  --primary-color: var(--red-500);
+
+  p {
+    color: var(--primary-color);
+    font-size: 12px;
+    margin-block: 4px;
+    margin-inline-start: 24px;
+    display: none;
+  }
+}
