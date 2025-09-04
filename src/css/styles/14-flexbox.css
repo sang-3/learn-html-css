@@ -2,17 +2,17 @@ body {
   margin: 20px;
 }
 
-/* 플렉스 컨테이너 관련 속성 */
+/* 플렉스 켄테이너 관련 속성 */
 .like {
   background: #ffc;
   box-shadow: 0 0 0 1px red;
   inline-size: 1000px;
   block-size: 100px;
+  /* 플렉스 컨테이너로 설정 */
   display: flex;
   /* flex-direction: row;
   flex-wrap: nowrap; */
-
-  /* flex-direction, flex-wrap 속성을 한번에 선언 */
+  /* flex-direction, flex-wrap 속성을 한 번에 선언 */
   flex-flow: row nowrap;
   /* 메인 축 정렬 */
   justify-content: end;
@@ -25,14 +25,6 @@ body {
   }
 }
 
-/* .like {
-  display: flow-root;
-
-  > div {
-    float: left;
-  }
-} */
-
 .lion {
   background: #ffc;
   box-shadow: 0 0 0 1px red;
@@ -41,8 +33,8 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: end;
-  align-items: center;
-  align-content: center;
+  align-items: end;
+  align-content: end;
 
   > div {
     inline-size: 200px;
