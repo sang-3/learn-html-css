@@ -26,11 +26,6 @@ body {
   display: inline-flex;
   inline-size: clamp(164px, 51.25%, 230px);
   color: var(--primary-color);
-  /* inline-size: min(51.25%, 230px);
-
-  @media (min-width: 768px) {
-    inline-size: 230px;
-  } */
 }
 
 /* 버튼 컴포넌트 */
@@ -57,7 +52,7 @@ body {
 }
 
 /* 체크박스 컴포넌트 */
-/* 체크박스 - 배경이미지 & SVG 이미지 */
+/* 체크박스 - 배경 이미지 & SVG 이미지 */
 .checkbox {
   --size: 24px;
   --gap: 4px;
@@ -71,7 +66,6 @@ body {
     inset-inline-start: 0;
     margin: 0;
     inline-size: var(--size);
-    /* inline-size: 100%; */
     block-size: var(--size);
     appearance: none;
   }
@@ -85,8 +79,7 @@ body {
 
   &.bg-icon {
     label {
-      background: url(/src/assets/naver/unchecked.svg) no-repeat 0 0;
-      /* background: yellow url(/src/assets/naver/unchecked.svg) no-repeat 0 0 / contain; */
+      background: url(/src/assets/naver/unchecked.svg) no-repeat;
       padding-inline-start: calc(var(--size) + var(--gap));
     }
 
@@ -113,23 +106,6 @@ body {
   }
 }
 
-/* 체크박스 - svg 이미지 */
-.checkbox {
-  &.svg-icon {
-    position: relative;
-  }
-
-  input {
-    /* appearance: none; */
-    position: absolute;
-    inset-inline-start: 0;
-    inset-block-start: 0;
-    margin: 0;
-    inline-size: var(--size);
-    block-size: var(--size);
-  }
-}
-
 /* 링크 텍스트 */
 .textlink-new {
   font-weight: 700;
@@ -145,9 +121,6 @@ body {
     margin: 0;
     inset: 0;
     appearance: none;
-    /* inset-inline-start: 0;
-    inset-block-start: 0; */
-    /* inline-size: 100%; */
   }
 
   label::after {

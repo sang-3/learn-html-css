@@ -18,9 +18,7 @@
     <h2>로고</h2>
     <div class="ui-component">
       <a href="/" class="logo" title="홈으로 이동">
-        <!-- Naver Logo -->
-        <svg aria-label="네이버" width="230" height="44" viewBox="0 0 230 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- <title>네이버</title> -->
+        <svg aria-label="네이버" class="svg-img" width="230" height="44" viewBox="0 0 230 44" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M30.0764 23.5394L13.6301 0H0V43.9824H14.279V20.443L30.7252 43.9824H44.3554V0H30.0764V23.5394Z" fill="currentColor" />
           <path d="M66.2086 0L48.8973 43.9824H63.6132L65.701 38.1767H82.2929L84.3851 44H99.0967L81.7853 0.0175967L66.2086 0ZM69.0644 27.5946L73.9992 13.8545L78.9295 27.5946H69.0644Z" fill="currentColor" />
           <path d="M116.624 28.9184L106.234 0H91.5224L108.834 43.9824H124.41L141.722 0H127.006L116.624 28.9184Z" fill="currentColor" />
@@ -37,8 +35,8 @@
     <h2>입력 서식</h2>
     <div class="ui-component">
       <div class="input">
-        <label for="input-1" class="sr-only">레이블</label>
-        <input type="email" aria-errormessage="error-1" id="input-1" name="input-name" required placeholder="플레이스 홀더 텍스트" />
+        <label for="input-0" class="sr-only">레이블</label>
+        <input readonly type="email" aria-errormessage="error-1" id="input-0" name="input-name" required placeholder="플레이스 홀더 텍스트" />
         <p class="error-message" id="error-1" aria-live="polite">에러 메시지를 입력해주세요.</p>
       </div>
       <button type="button" class="copy-component">복사</button>
@@ -46,7 +44,7 @@
     <hr />
     <h2>버튼</h2>
     <div class="ui-component">
-      <button class="button button-fill disabled">버튼</button>
+      <button type="button" class="button button-fill">버튼</button>
       <button type="button" class="copy-component">복사</button>
     </div>
     <hr />
@@ -54,7 +52,7 @@
     <h3>배경 이미지</h3>
     <div class="ui-component">
       <div class="checkbox bg-icon">
-        <input type="checkbox" id="checkbox-0" name="checkbox-name" />
+        <input type="checkbox" id="checkbox-0" name="checkbox-name" checked />
         <label for="checkbox-0">체크박스 레이블</label>
       </div>
       <button type="button" class="copy-component">복사</button>
@@ -62,7 +60,7 @@
     <h3>SVG 요소</h3>
     <div class="ui-component">
       <div class="checkbox svg-icon">
-        <input type="checkbox" id="checkbox-1" name="checkbox-name" checked />
+        <input type="checkbox" id="checkbox-1" name="checkbox-name" />
         <label for="checkbox-1">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="area" fill="#fff" d="M23.8328 12.0021C23.8328 18.5862 18.5947 23.9228 12.1393 23.9228C5.68381 23.9228 0.428589 18.5862 0.428589 12.0021C0.428589 5.4181 5.67953 0.0771484 12.1393 0.0771484C18.599 0.0771484 23.8328 5.41382 23.8328 12.0021Z" />
@@ -85,7 +83,7 @@
     <hr />
     <h2>링크 텍스트</h2>
     <div class="ui-component">
-      <a class="textlink-new" href="" target="_blank" rel="noopenner noreferrer">링크 텍스트</a>
+      <a class="textlink-new" href="/" target="_blank" rel="noopenner noreferrer">링크 텍스트</a>
       <button type="button" class="copy-component">복사</button>
     </div>
     <hr />
