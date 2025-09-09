@@ -35,35 +35,87 @@
   }
 }
 
-/* 컨테이너 */
+/* 그리드 레이아웃 */
 .container {
+  display: grid;
+  grid-template-columns: [full-start] 20px [content-start] 1fr [content-end] 20px [full-end];
+  grid-template-rows: 100px repeat(5, 1fr) 100px;
+
+  .header,
+  .book,
+  .news,
+  .board,
+  .favorite,
+  .twitter,
+  .footer {
+    grid-column: content;
+  }
+
+  .main {
+    display: contents;
+  }
+
+  @media (width>=960px) {
+    grid-template-columns: [full-start] 1fr [content-start] repeat(12, minmax(62px, 1fr)) [content-end] 1fr [full-end];
+    grid-auto-rows: auto;
+    gap: 16px;
+
+    .book {
+      grid-column: content-start / span 4;
+    }
+
+    .news {
+      grid-column: span 8;
+    }
+
+    .board {
+      grid-column: content-start / span 4;
+    }
+
+    .twitter {
+      grid-column: span 6;
+    }
+
+    .favorite {
+      grid-column: span 2;
+      order: 1;
+    }
+
+    .footer {
+      order: 1;
+    }
+  }
+}
+
+/* 플렉스 레이아웃 */
+/* 컨테이너 */
+/* .container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-}
+} */
 
 /* 헤더 & 메인콘텐츠 & 푸터 */
-.header,
+/* .header,
 .main,
 .footer {
   max-inline-size: 1200px;
   inline-size: 100%;
-  /* inline-size: minmax(100%, 1200px); */
-}
+} */
 
 /* 헤더 & 푸터 */
-.header,
+/* .header,
 .footer {
   block-size: 100px;
   flex: 0 1 auto;
-}
+} */
 
 /* 헤더 */
-.header {
-}
+/* .header {
+} */
 
 /* 메인 콘텐츠 */
-.main {
+/* .main {
   flex: 1 1 0;
   display: flex;
   flex-flow: row wrap;
@@ -77,8 +129,6 @@
   }
 
   @media (width >= 960px) {
-    /* column-gap: 20px; */
-
     .book {
       inline-size: 35%;
     }
@@ -101,10 +151,8 @@
       inline-size: 45%;
     }
   }
-}
+} */
 
 /* 푸터 */
-.footer {
-}
-
-/* flex 레이아웃 */
+/* .footer {
+} */
