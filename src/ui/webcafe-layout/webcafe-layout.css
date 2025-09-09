@@ -1,0 +1,108 @@
+.container {
+  background: silver;
+  min-block-size: 100vh;
+
+  .header {
+    background: yellow;
+  }
+
+  .main {
+    background: gray;
+  }
+
+  .footer {
+    background: yellow;
+  }
+
+  .book {
+    background: pink;
+  }
+
+  .news {
+    background: lightgreen;
+  }
+
+  .board {
+    background: salmon;
+  }
+
+  .favorite {
+    background: teal;
+  }
+
+  .twitter {
+    background: aqua;
+  }
+}
+
+/* 컨테이너 */
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+/* 헤더 & 푸터 */
+.header,
+.footer {
+  block-size: 100px;
+  flex: 0 1 auto;
+}
+
+/* 헤더 */
+.header {
+}
+
+/* 메인 콘텐츠 */
+.main {
+  flex: 1 1 0;
+  display: flex;
+  flex-flow: row wrap;
+
+  > div {
+    inline-size: 100%;
+  }
+
+  @media (width >= 960px) {
+    column-gap: 20px;
+
+    .main-wrapper-1,
+    .main-wrapper-2 {
+      display: flex;
+      flex-flow: row nowrap;
+      inline-size: 100%;
+      gap: 20px;
+    }
+
+    .book {
+      /* inline-size: 35%; */
+      flex: 3 1 0;
+    }
+
+    .news {
+      /* inline-size: 65%; */
+      flex: 7 1 0;
+    }
+
+    .board {
+      /* inline-size: 35%; */
+      flex: 3 1 0;
+    }
+
+    .favorite {
+      /* inline-size: 20%; */
+      flex: 5 1 0;
+      order: 1;
+    }
+
+    .twitter {
+      /* inline-size: 45%; */
+      flex: 2 1 0;
+    }
+  }
+}
+
+/* 푸터 */
+.footer {
+}
+
+/* flex 레이아웃 */
