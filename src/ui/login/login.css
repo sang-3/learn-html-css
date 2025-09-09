@@ -176,7 +176,7 @@ body > a:first-child {
 
   .logo {
     vertical-align: top;
-    /* 헤더와 a태크 사이 갭이 생김 이걸 사용하면 없어짐. 
+    /* 헤더와 a태크 사이 갭이 생김 이걸 사용하면 없어짐.
     inline 때문에 생기는 이유 */
   }
 
@@ -218,9 +218,6 @@ body > a:first-child {
       align-items: center;
 
       @media (width<768px) {
-        .checkbox {
-        }
-
         .textlink-new,
         .switch {
           display: none;
